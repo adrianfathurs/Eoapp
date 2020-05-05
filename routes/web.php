@@ -25,6 +25,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth/register');
 });
+Route::get('/content', function () {
+    return view('content/page');
+});
+Route::get('/profileEO', function () {
+    return view('content/pageprofileEO');
+});
 
 Auth::routes();
 
